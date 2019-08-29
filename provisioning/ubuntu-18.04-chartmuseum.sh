@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ubuntu provisioning file
-# sudo apt update
+sudo apt update
 
 # install chartmuseum
 IMAGETAG="0.9.0"
