@@ -9,7 +9,8 @@ The base image is provisioned with bash script [ubuntu-18.04-chartmuseum.sh](htt
 
 ### References
 - [chartmuseum](https://chartmuseum.com)
-- [Used Vagrantfile for Basebox](https://github.com/elegoev/vagrant-ubuntu-18.04/blob/master/jenkins/vagrant/esxi/_Vagrantfile)
+- [upload charts](https://chartmuseum.com/docs/#uploading-a-chart-package)
+- [ssed Vagrantfile for basebox](https://github.com/elegoev/vagrant-ubuntu-18.04/blob/master/jenkins/vagrant/esxi/_Vagrantfile)
 
 ###  Create Vagrant Box Environment
 #### Provider "virtualbox"
