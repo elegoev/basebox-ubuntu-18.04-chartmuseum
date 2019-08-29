@@ -6,8 +6,7 @@ sudo apt update
 # install chartmuseum
 IMAGETAG="0.9.0"
 echo "install chartmuseum version $IMAGETAG"
-sudo docker run --rm -d \
-     -p 8080:8080 \
+sudo docker run -d --restart=unless-stopped --name chartmuseum -p 8080:8080 \
      -v /home/vagrant/charts:/charts \
      -e DEBUG=true \
      -e STORAGE=local \
