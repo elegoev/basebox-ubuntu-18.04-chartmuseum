@@ -5,7 +5,7 @@ Vagrant Box with Ubuntu 18.04, docker & chartmuseum
 Used base image [elegoev/ubuntu-18.04-docker](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04-docker)
 
 ### Automatic provisioning
-The base image is provisioned with bash script [ubuntu-18.04-chartmuseum.sh](https://github.com/elegoev/vagrant-ubuntu1804-chartmuseum/blob/master/provisioning/ubuntu-18.04-chartmuseum.sh)
+The base image is provisioned with bash script [ubuntu-18.04-chartmuseum.sh](https://github.com/elegoev/basebox-ubuntu-18.04-chartmuseum/blob/master/provisioning/ubuntu-18.04-chartmuseum.sh)
 
 ### References
 - [chartmuseum](https://chartmuseum.com)
