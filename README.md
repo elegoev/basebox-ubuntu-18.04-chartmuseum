@@ -1,5 +1,5 @@
 ## ubuntu-18.04-chartmuseum
-Vagrant Box with Ubuntu 18.04, dokcer & chartmuseum
+Vagrant Box with Ubuntu 18.04, docker & chartmuseum
 
 ### Base image
 Used base image [elegoev/ubuntu-18.04-docker](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04-docker)
