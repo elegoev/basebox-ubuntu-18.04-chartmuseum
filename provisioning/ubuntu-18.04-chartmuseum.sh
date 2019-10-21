@@ -23,4 +23,4 @@ DATE=`date +%Y%m%d%H%M`
 
 # store k3s version
 CHARTMUSEUM_VERSION=$IMAGETAG
-echo "$CHARTMUSEUM_VERSION.$DATE" > /vagrant/version
+echo "chartmuseum-$CHARTMUSEUM_VERSION" > /vagrant/version
