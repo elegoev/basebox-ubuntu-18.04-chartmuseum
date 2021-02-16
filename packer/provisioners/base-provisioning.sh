@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Ubuntu provisioning file
-sudo apt update
+application_file_path="/vagrant/installed-application.md"
 
 # install chartmuseum
-IMAGETAG="0.9.0"
+IMAGETAG="0.12.0"
 LOCALDIR="/home/vagrant/charts"
 echo "install chartmuseum version $IMAGETAG"
 sudo docker run -d --restart=unless-stopped --name chartmuseum -p 8080:8080 \
@@ -18,9 +17,10 @@ sudo docker run -d --restart=unless-stopped --name chartmuseum -p 8080:8080 \
 sudo chown -R vagrant $LOCALDIR
 sudo chgrp -R vagrant $LOCALDIR
 
-# create date string
-DATE=`date +%Y%m%d%H%M`
-
-# store k3s version
+# set version
 CHARTMUSEUM_VERSION=$IMAGETAG
-echo "chartmuseum-$CHARTMUSEUM_VERSION" > /vagrant/version
+echo "# Installed application "  > $application_file_path
+echo "***                     " >> $application_file_path
+echo "> Chartmuseum: $CHARTMUSEUM_VERSION" >> $application_file_path
+
+
