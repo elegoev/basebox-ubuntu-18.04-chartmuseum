@@ -18,9 +18,11 @@ sudo chown -R vagrant $LOCALDIR
 sudo chgrp -R vagrant $LOCALDIR
 
 # set version
+DOCKER_VERSION=$(sudo docker version --format '{{.Server.Version}}')
 CHARTMUSEUM_VERSION=$IMAGETAG
 echo "# Installed application "  > $application_file_path
 echo "***                     " >> $application_file_path
+echo "> Docker:      $DOCKER_VERSION" >> $application_file_path
 echo "> Chartmuseum: $CHARTMUSEUM_VERSION" >> $application_file_path
 
 
