@@ -1,4 +1,4 @@
 # Installed application 
 ***                     
-> Docker:      19.03.6
+> Docker:      20.10.3
 > Chartmuseum: 0.12.0
